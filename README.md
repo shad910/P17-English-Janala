@@ -139,12 +139,12 @@ For More >>  you can explore this implementation 👉  [https://codepen.io/Ferdo
 
 
 ---
-## ASSIGNMENT Provider -->  Programming hero
+## ASSIGNMENT Provider -->  Programming Hero
 ## Git-Hub Profile Link --> https://github.com/ProgrammingHero1
 ## Private Repository Link : https://classroom.github.com/a/JPUEMrmw
 ## Private Live Link :
 ---
 
 ---
-### Created by Shad {github.com/shad910}
+### Created by Shad --> https://github.com/shad910
 ---

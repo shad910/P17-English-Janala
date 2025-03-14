@@ -70,7 +70,16 @@
       }
 
       .bg {
-        background: linear-gradient(178.08deg, rgba(255, 255, 255, 0.3) -28.101%,rgba(0, 0, 0, 0) 128.101%),linear-gradient(169.25deg, rgba(255, 255, 255, 0.05) 24.246%,rgba(0, 0, 0, 0) 24.246%);
+        background: linear-gradient(
+            178.08deg,
+            rgba(255, 255, 255, 0.3) -28.101%,
+            rgba(0, 0, 0, 0) 128.101%
+          ),
+          linear-gradient(
+            169.25deg,
+            rgba(255, 255, 255, 0.05) 24.246%,
+            rgba(0, 0, 0, 0) 24.246%
+          );
         backdrop-filter: blur(40px);
       }
     </style>
@@ -85,7 +94,7 @@
     <header>
       <!-- Nav Section -->
       <nav
-        class="bg mt-1 p-2 md:p-5 flex justify-between items-center border-b border-[#C6BDBD] "
+        class="bg mt-1 p-2 md:p-5 flex justify-between items-center border-b border-[#C6BDBD]"
       >
         <!-- Logo Container -->
         <div>
@@ -118,61 +127,92 @@
         </div>
         <!-- Dropdown Button Container -->
         <div class="dropdown dropdown-end md:hidden">
-            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2"
+          <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <li>
-                <button
-                  id="learnBTN"
-                  class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
-                >
-                  <i class="fa-solid fa-book-open text-lg"></i> Learn
-                </button>
-              </li>
-
-              <li>
-                <button
-                  id="faqBTN"
-                  class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
-                >
-                  <i class="fa-solid fa-circle-question text-lg"></i> FAQ
-                </button>
-              </li>
-
-              <li>
-                <button
-                  id="logoutBTN"
-                  class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white w-full"
-                >
-                  <i class="fa-solid fa-right-from-bracket text-lg"></i> Logout
-                </button>
-              </li>
-            </ul>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
           </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2"
+          >
+            <li>
+              <button
+                id="learnBTN"
+                class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
+              >
+                <i class="fa-solid fa-book-open text-lg"></i> Learn
+              </button>
+            </li>
+
+            <li>
+              <button
+                id="faqBTN"
+                class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
+              >
+                <i class="fa-solid fa-circle-question text-lg"></i> FAQ
+              </button>
+            </li>
+
+            <li>
+              <button
+                id="logoutBTN"
+                class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white w-full"
+              >
+                <i class="fa-solid fa-right-from-bracket text-lg"></i> Logout
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <!-- Main Section -->
     <main>
-        <!-- Hero Section -->
-        <section></section>
+      <!-- Hero Section -->
+      <section class="my-8 flex justify-between items-center">
+        <div>
+          <div>
+            <h2 class="text-4xl font-extrabold mb-3">
+              <span class="text-[#00BCFF]">English</span> is Easy!!
+            </h2>
+            <p class="hind-siliguri font-medium mb-4">
+              আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন
+              অথবা<br />আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons
+              আপনাকে নিয়ে<br />যাবে অন্য একটি Level এ
+            </p>
+
+            <!-- Input Form Section -->
+            <form class="space-y-3">
+              <input type="text" placeholder="Type here" class="input" />
+              <br />
+              <input type="text" placeholder="Type here" class="input" />
+              <br />
+              <button
+                class="btn text-white bg-[#422AD5] hover:text-[#422AD5] hover:border-[#422AD5] hover:bg-white"
+              >
+                Get Started
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Image Container -->
+        <div class="w-[500px] h-[480px]">
+          <img src="./images/hero-student.png" alt="Student Image" />
+        </div>
+      </section>
+      
     </main>
 
     <!-- Footer Section -->
