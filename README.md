@@ -1,5 +1,5 @@
 ### WELCOME TO ASSIGNMENT-006
-# ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
+# ENGLISH <img width="25px" src="./images/logo.png" /> JANALA
 
 ## Private Repo Link : https://classroom.github.com/a/JPUEMrmw
 
