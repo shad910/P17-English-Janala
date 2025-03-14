@@ -146,5 +146,5 @@ For More >>  you can explore this implementation 👉  [https://codepen.io/Ferdo
 ---
 
 ---
-### Created by Shad --> https://github.com/shad910
+### Live website created by Shad --> https://github.com/shad910
 ---
