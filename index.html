@@ -18,6 +18,13 @@
       href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google Font CDN (Tiro Bangla)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Website Title Logo -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
@@ -58,19 +65,115 @@
       .hind-siliguri {
         font-family: "Hind Siliguri", sans-serif;
       }
+      .tiro-bangla {
+        font-family: "Tiro Bangla", serif;
+      }
+
+      .bg {
+        background: linear-gradient(178.08deg, rgba(255, 255, 255, 0.3) -28.101%,rgba(0, 0, 0, 0) 128.101%),linear-gradient(169.25deg, rgba(255, 255, 255, 0.05) 24.246%,rgba(0, 0, 0, 0) 24.246%);
+        backdrop-filter: blur(40px);
+      }
     </style>
 
     <!-- Animation Section -->
 
     <!-- Title Section -->
-    <title>Document</title>
+    <title>English Janala</title>
   </head>
-  <body class="poppins">
+  <body class="poppins w-11/12 mx-auto">
     <!-- Header Section -->
-    <header></header>
+    <header>
+      <!-- Nav Section -->
+      <nav
+        class="bg mt-1 p-2 md:p-5 flex justify-between items-center border-b border-[#C6BDBD] "
+      >
+        <!-- Logo Container -->
+        <div>
+          <h1 class="flex items-center text-xl">
+            <span class="text-[#18181B] font-semibold">English </span>
+            <img src="./images/logo.png" alt="" srcset="" />
+            <span class="tiro-bangla text-[#000000] font-medium">জানালা</span>
+          </h1>
+        </div>
+        <!-- Navigation Button Container -->
+        <div class="space-x-2 hidden md:flex">
+          <button
+            id="faqBTN"
+            class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
+          >
+            <i class="fa-solid fa-circle-question text-lg"></i> FAQ
+          </button>
+          <button
+            id="learnBTN"
+            class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
+          >
+            <i class="fa-solid fa-book-open text-lg"></i> Learn
+          </button>
+          <button
+            id="logoutBTN"
+            class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
+          >
+            <i class="fa-solid fa-right-from-bracket text-lg"></i> Logout
+          </button>
+        </div>
+        <!-- Dropdown Button Container -->
+        <div class="dropdown dropdown-end md:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2"
+            >
+              <li>
+                <button
+                  id="learnBTN"
+                  class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
+                >
+                  <i class="fa-solid fa-book-open text-lg"></i> Learn
+                </button>
+              </li>
+
+              <li>
+                <button
+                  id="faqBTN"
+                  class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
+                >
+                  <i class="fa-solid fa-circle-question text-lg"></i> FAQ
+                </button>
+              </li>
+
+              <li>
+                <button
+                  id="logoutBTN"
+                  class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white w-full"
+                >
+                  <i class="fa-solid fa-right-from-bracket text-lg"></i> Logout
+                </button>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header>
 
     <!-- Main Section -->
-    <main></main>
+    <main>
+        <!-- Hero Section -->
+        <section></section>
+    </main>
 
     <!-- Footer Section -->
     <footer></footer>

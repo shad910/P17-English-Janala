@@ -1,13 +1,9 @@
-### WELCOME TO ASSIGNMENT-006
+### ASSIGNMENT -> 006 - English জানালা 
 # ENGLISH <img width="25px" src="./images/logo.png" /> JANALA
 
-## Private Repo Link : https://classroom.github.com/a/JPUEMrmw
-
- **📅 Deadline For 60 marks**: 17th March , 2025 ( 11:59 pm ⏱️)
-
-**📅 Deadline For 50 marks**: 19th March , 2025 ( 11:59 pm ⏱️)
-
-**📅 Deadline For 30 marks**: Any time after  19th March , 2025
+---
+⚡ Requirements and Resources
+---
 
 ---
 ⚡ API Endpoints
@@ -31,6 +27,7 @@ https://openapi.programming-hero.com/api/word/5
 ```bash
 https://openapi.programming-hero.com/api/words/all
 ```
+
 
 # Requirements 
 
@@ -111,6 +108,7 @@ https://openapi.programming-hero.com/api/words/all
 ### Loading Spinner
 - [ ] Create a loading spinner that will be display when vocabulary is loading from API 
 
+
 ## Optional: Be a Perfectionist
 
 ⚠️ Their is No Mark for Optional Requirement.  You won't get any support for any of  the optional Part. But we strongly recommend you to give a try after completing all the requirement.
@@ -138,3 +136,15 @@ For More >>  you can explore this implementation 👉  [https://codepen.io/Ferdo
 - [ ] integrate a local Bengali font for Bangla words given in assets
 - [ ] use this font on every Bengali words
 - [ ] Search , Research , Explore  If you dont know how to do it. 
+
+
+---
+## ASSIGNMENT Provider -->  Programming hero
+## Git-Hub Profile Link --> https://github.com/ProgrammingHero1
+## Private Repository Link : https://classroom.github.com/a/JPUEMrmw
+## Private Live Link :
+---
+
+---
+### Created by Shad {github.com/shad910}
+---
