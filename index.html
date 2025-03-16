@@ -103,11 +103,11 @@
   </head>
   <body class="poppins w-11/12 mx-auto">
     <!-- Header Section -->
-    <header>
+    <header class="relative">
       <!-- Nav Section -->
       <nav
         id="nav"
-        class="inactive bg mt-1 p-2 md:p-5 flex justify-between items-center border-b border-[#C6BDBD]"
+        class="lg:fixed lg:w-11/12 top-0 z-50 inactive bg p-2 md:p-4 flex justify-between items-center border-b border-[#C6BDBD] bg-transparent"
       >
         <!-- Logo Container -->
         <div>
@@ -120,12 +120,14 @@
         <!-- Navigation Button Container -->
         <div class="space-x-2 hidden md:flex">
           <button
+          onclick="smoothScroll('faqContainer', 1000)"
             id="faqBTN"
             class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
           >
             <i class="fa-solid fa-circle-question text-lg"></i> FAQ
           </button>
           <button
+            onclick="smoothScroll('learnContainer', 1000)"
             id="learnBTN"
             class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
           >
@@ -162,6 +164,7 @@
           >
             <li>
               <button
+              onclick="smoothScroll('learnContainer', 1000)"
                 id="learnBTN"
                 class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
               >
@@ -171,6 +174,7 @@
 
             <li>
               <button
+              onclick="smoothScroll('faqContainer', 1000)"
                 id="faqBTN"
                 class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
               >
@@ -194,7 +198,7 @@
     <!-- Main Section -->
     <main>
       <!-- Hero Section -->
-      <section class="my-8 md:my-11 md:flex justify-between items-center">
+      <section class="mx-1 my-9 md:my-11 md:flex justify-between items-center">
         <div>
           <div>
             <h2 class="text-4xl font-extrabold mb-3">
@@ -240,7 +244,7 @@
       </section>
 
       <!-- Learning Section -->
-      <section id="learnContainer" class="inactive py-36">
+      <section id="learnContainer" class="inactive px-1 py-28">
         <h3 class="text-center text-2xl font-bold mb-10">
           <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
         </h3>
@@ -250,9 +254,7 @@
         <div
           id="lessonsContainer"
           class="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-7 lg:gap-3 mb-6"
-        >
-          <!-- <button class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white">Lesson - 1</button> -->
-        </div>
+        ></div>
 
         <!-- lesson Push Section -->
         <div
@@ -284,7 +286,7 @@
       </section>
 
       <!-- FAQ Section -->
-      <section id="faqContainer" class="inactive py-32">
+      <section id="faqContainer" class="inactive px-1 py-28">
         <h3 class="text-center text-2xl font-bold mb-10">
           <span class="text-[#00BCFF]">Frequently</span> Asked Questions
         </h3>
@@ -361,7 +363,7 @@
 
     <!-- Footer Section -->
     <footer
-      class="py-10 md:py-12 bg-[#FFFFFF] md:flex justify-between items-end border-t border-[#ffebeb]"
+      class="px-1 py-10 md:py-12 bg-[#FFFFFF] md:flex justify-between items-end border-t border-[#ffebeb]"
     >
       <div>
         <h1 class="flex items-center text-xl mb-3">
