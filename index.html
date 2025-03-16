@@ -37,6 +37,9 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Sweet Alert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Font Awesome CDN -->
     <script
       src="https://kit.fontawesome.com/89cee7f055.js"
@@ -85,6 +88,11 @@
 
       .inactive {
         display: none;
+      }
+
+      .active {
+        background-color: #422AD5;
+        color: white;
       }
     </style>
 
@@ -186,7 +194,7 @@
     <!-- Main Section -->
     <main>
       <!-- Hero Section -->
-      <section class="my-8 md:my-20 md:flex justify-between items-center">
+      <section class="my-8 md:my-11 md:flex justify-between items-center">
         <div>
           <div>
             <h2 class="text-4xl font-extrabold mb-3">
@@ -251,6 +259,13 @@
           id="lessonCard"
           class="py-10 bg-[#F8F8F8] rounded-3xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
         >
+          <div id="spinner" class="col-span-full justify-self-center">
+            <span class="loading loading-dots loading-xs"></span>
+            <span class="loading loading-dots loading-sm"></span>
+            <span class="loading loading-dots loading-md"></span>
+            <span class="loading loading-dots loading-lg"></span>
+            <span class="loading loading-dots loading-xl"></span>
+          </div>
           <!-- Not Selected any lesson Button -->
           <div class="col-span-full">
             <div class="py-10 text-center bg-[#F8F8F8] rounded-3xl">
@@ -263,6 +278,9 @@
             </div>
           </div>
         </div>
+
+        <!-- Details btn -->
+        <button onabort=""></button>
       </section>
 
       <!-- FAQ Section -->
@@ -375,6 +393,7 @@
 
     <!-- JavaScript Section -->
     <script src="./utilities/utilities.js"></script>
+    
     <script src="./script/index.js"></script>
   </body>
 </html>
