@@ -141,7 +141,7 @@ For More >>  you can explore this implementation 👉  [https://codepen.io/Ferdo
 ---
 ## ASSIGNMENT Provider -->  Programming Hero
 ## Git-Hub Profile Link --> https://github.com/ProgrammingHero1
-## Private Repository Link : https://classroom.github.com/a/JPUEMrmw
+## Private Repository Link : [https://classroom.github.com/a/JPUEMrmw](https://github.com/programming-hero-web-course1/b11-a6-english-janala-shad910)
 ## Private Live Link :
 ---
 
