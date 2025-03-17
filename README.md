@@ -141,12 +141,8 @@ For More >>  you can explore this implementation 👉  [https://codepen.io/Ferdo
 ---
 ## ASSIGNMENT Provider -->  Programming Hero
 ## Git-Hub Profile Link --> https://github.com/ProgrammingHero1
-<<<<<<< HEAD
 ## Private Repository Link : https://github.com/programming-hero-web-course1/b11-a6-english-janala-shad910
-=======
-## Private Repository Link : [https://classroom.github.com/a/JPUEMrmw](https://github.com/programming-hero-web-course1/b11-a6-english-janala-shad910)
->>>>>>> 2d141e760998b844115ddc7dda488992f2a06ca5
-## Private Live Link :
+## Private Live Link : https://english-janala-shad910.netlify.app/
 ---
 
 ---
