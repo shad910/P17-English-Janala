@@ -46,8 +46,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Tailwind CSS Custom Configuration Section
-    <script>
+    <!-- Tailwind CSS Custom Configuration Section -->
+    <!-- <script>
       tailwind.config = {
         theme: {
           extend: {
@@ -56,6 +56,7 @@
             },
           },
         },
+        plugins: [daisyui],
       };
     </script> -->
 
@@ -91,7 +92,7 @@
       }
 
       .active {
-        background-color: #422AD5;
+        background-color: #422ad5;
         color: white;
       }
     </style>
@@ -120,7 +121,7 @@
         <!-- Navigation Button Container -->
         <div class="space-x-2 hidden md:flex">
           <button
-          onclick="smoothScroll('faqContainer', 1000)"
+            onclick="smoothScroll('faqContainer', 1000)"
             id="faqBTN"
             class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
           >
@@ -164,7 +165,7 @@
           >
             <li>
               <button
-              onclick="smoothScroll('learnContainer', 1000)"
+                onclick="smoothScroll('learnContainer', 1000)"
                 id="learnBTN"
                 class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
               >
@@ -174,7 +175,7 @@
 
             <li>
               <button
-              onclick="smoothScroll('faqContainer', 1000)"
+                onclick="smoothScroll('faqContainer', 1000)"
                 id="faqBTN"
                 class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white"
               >
@@ -215,7 +216,6 @@
               <input
                 id="inputName"
                 type="text"
-                value="Shad"
                 placeholder="Enter Your Name"
                 class="input"
               />
@@ -223,7 +223,6 @@
               <input
                 id="inputPassword"
                 type="password"
-                value="123456"
                 placeholder="Enter Your Password"
                 class="input"
               />
@@ -259,15 +258,16 @@
         <!-- lesson Push Section -->
         <div
           id="lessonCard"
-          class="py-10 bg-[#F8F8F8] rounded-3xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+          class="px-4 py-10 bg-[#F8F8F8] rounded-3xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
         >
-          <div id="spinner" class="col-span-full justify-self-center">
+          <div id="spinner" class="col-span-full justify-self-center hidden">
             <span class="loading loading-dots loading-xs"></span>
             <span class="loading loading-dots loading-sm"></span>
             <span class="loading loading-dots loading-md"></span>
             <span class="loading loading-dots loading-lg"></span>
             <span class="loading loading-dots loading-xl"></span>
           </div>
+
           <!-- Not Selected any lesson Button -->
           <div class="col-span-full">
             <div class="py-10 text-center bg-[#F8F8F8] rounded-3xl">
@@ -395,7 +395,7 @@
 
     <!-- JavaScript Section -->
     <script src="./utilities/utilities.js"></script>
-    
+
     <script src="./script/index.js"></script>
   </body>
 </html>

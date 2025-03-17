@@ -136,20 +136,23 @@ const displayCategories = (categories) => {
 
         btn.addEventListener("click", () => {
             removeActiveClass();
+            document.getElementById("spinner").style.display="none";
             let clickedBtn = getID(`${category.id}`);
             clickedBtn.classList.add("active");
+            document.getElementById("spinner").style.display="block";
         })
     }
 };
 
-hide("spinner");
-
 const loadLevels = async (level) => {
+
     try {
         let urlLevel = `https://openapi.programming-hero.com/api/level/${level}`;
         const response = await fetch(urlLevel);
         const data = await response.json();
-        displayLevels(data.data);
+        if(data.data){
+            return displayLevels(data.data);
+        }
     } catch (error) {
         console.error("Error loading levels:", error);
     }
@@ -175,8 +178,9 @@ const displayLevels = async (object) => {
     const lessonCard = getID("lessonCard");
     lessonCard.innerHTML = "";
 
+
     // There is no lesson
-    if (Array.isArray(object) && object.length == 0) {
+    if (object.length < 1) {
         lessonCard.innerHTML = `
         <div class="col-span-full">
             <div class="space-y-3 p-2 text-center">
@@ -201,10 +205,10 @@ const displayLevels = async (object) => {
             div.innerHTML = `
             <div class="card bg-[#FFFFFF] rounded-3xl shadow-sm py-7 px-7 hover:bg-[#1a91ff08]">
     
-                <div class="text-center space-y-4">
+                <div class="text-center space-y-3">
                   <h3 class="text-2xl font-bold">${element.word}</h3>
-                  <p class="text-base font-medium">Meaning /Pronunciation</p>
-                  <h3 class="hind-siliguri text-2xl font-semibold">${element.meaning ? element.meaning : "অর্থহীন"} / ${element.pronunciation}</h3>
+                  <p class="text-base font-medium">Meaning / Pronunciation</p>
+                  <h3 class="hind-siliguri text-xl font-semibold text-nowrap">${element.meaning ? element.meaning : "অর্থহীন"} / ${element.pronunciation}</h3>
                 </div>
     
                 <div class="flex justify-between items-center">
